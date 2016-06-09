@@ -1,0 +1,65 @@
+mixin redes
+    .redes
+        ul
+            li: span: a: i.fa.fa-facebook
+            li: span: a: i.fa.fa-google-plus
+            li: span: a: i.fa.fa-twitter
+
+mixin titular-portada(titulo, fecha, seccion)
+    .col-xs-12
+        h1= titulo
+        .datos-portada
+            ul
+                li: +redes
+                li: p.fecha-titular= fecha 
+                li: p.seccion= seccion
+
+mixin noticia-principal(imagen, titular, alt)
+    .col-6-sm
+        .noticia-portada
+            .foto-portada
+                img(src="assets/image/#{imagen}.jpg", alt="#{alt}")
+            .sombra
+                h2.titular= titular   
+
+mixin noticias-secundarias(imagen1, titular1, alt1, imagen2, titular2, alt2)
+    .col-6-sm
+        .noticia-portada.noticia-secundaria
+            .foto-portada
+                img(src="assets/image/#{imagen1}.jpg", alt="#{alt1}")
+            .sombra
+                h3.titular= titular1 
+        .noticia-portada.noticia-secundaria
+            .foto-portada
+                img(src="assets/image/#{imagen2}.jpg", alt="#{alt2}")
+            .sombra
+                h3.titular= titular2
+
+mixin columnista(foto, alt, columnista, titulo)
+    .col-xs-6.col-sm-4.col-md-2
+        a(href="#").thumbnail
+            img(src="assets/image/#{foto}.jpg", alt="#{alt}")
+        p.columnistas-portada= columnista
+        p.titulo-columna-portada= titulo
+
+mixin mario
+    +columnista('img-columnistas', 'Mario Vargas Llosa', 'Mario Vargas Llosa', 'Megarrenuncia apulpinante')
+mixin augus
+    +columnista('img_blogueros', 'Augusto Álvarez Rodrich', 'Augusto Álvarez Rodrich', 'Respuesta a una derrota estridente')
+
+mixin columnistas-slider
+    +mario
+    +augus
+    +mario
+    +augus
+    +mario
+    +columnista('img_blogueros', 'Mario Vargas Llosa', 'Mario Vargas Llosa', 'Megarrenuncia apulpinante')
+
+mixin cabecera-roja(cabecera)
+    p.cabecera-roja
+        a: span= cabecera
+
+
+mixin cabecera-gris(cabecera)
+    p.cabecera-gris
+        a: span= cabecera

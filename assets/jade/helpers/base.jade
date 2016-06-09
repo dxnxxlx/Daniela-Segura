@@ -1,0 +1,44 @@
+doctype html
+html(lang='es-PE')
+  head
+    meta(charset='UTF-8')
+    title Home
+    link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css", integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7", crossorigin="anonymous")
+    link(href='http://fonts.googleapis.com/css?family=PT+Sans:400,700', rel='stylesheet', type='text/css')
+    link(href='http://fonts.googleapis.com/css?family=Oswald:400,700', rel='stylesheet', type='text/css')
+    link(rel='stylesheet', type='text/css', href='assets/css/dist/font-awesome.min.css')
+    //link(rel='stylesheet', type='text/css', href='assets/css/dist/bootstrap.min.css')
+    link(rel='stylesheet', type='text/css', href='assets/css/dist/slick.css')
+    link(rel='stylesheet', type='text/css', href='assets/css/dist/slick-theme.css')
+    link(rel='stylesheet', type='text/css', href='assets/css/main.css')
+
+  body
+    include ../helpers/variables
+    include ../helpers/mixins
+    section#titulares
+        .container
+            .row
+                +titular-portada('guerra en la municipalidad de lima metropolitana', 'Hace 12 minutos', 'política')
+            .row
+                +noticia-principal('img_grid_principal', 'JNE impulsará campaña en favor de la aprobación de la Reforma Electoral', 'Vocero del JNE')
+                +noticias-secundarias('img_grid_secundario', 'Martín Belaunde Lossio: Empresas vinculadas al empresario contrataron por S/.3000 millones | FOTOS', 'Martín Belaunde Lossio', 'img_grid_secundario', 'Sub 20:Perú vs. Paraguay: bicolor empató 1-1 y pasó al hexagonal final del Sudamericano | VIDEO', 'Sub 20 celebra empate con Paraguay')
+
+    section#columnistas
+    section#
+
+                
+                
+            
+                
+                    
+
+
+    script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js", integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS", crossorigin="anonymous")
+    script(src='http://code.jquery.com/jquery-1.11.2.min.js')
+    script(src='http://code.jquery.com/jquery-migrate-1.2.1.min.js')
+    script(type='text/javascript', src='js/bootstrap.min.js')
+    script(type='text/javascript', src='js/slick.min.js')
+    script(type='text/javascript', src='js/bootstrap-hover-dropdown.min.js')
+    script(type='text/javascript', src='js/modernizr.custom.68172.js')
+    script(type='text/javascript', src='js/respond.js')
+      

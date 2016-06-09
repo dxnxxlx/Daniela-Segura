@@ -1,0 +1,228 @@
+/*   h1{
+   	font-size: 5.5rem;
+    font-family: "Open Sans", "Helvetica", Arial, sans-serif;
+    line-height: 1;
+	}
+
+//Cabecera por secciones
+
+.cabecera-roja{
+	border-top: 4px solid #AA1801;
+	text-align: center;
+    position: relative;
+    font-size: 24px;
+	span{
+		display: inline-block;
+	    padding: 6px 10px;
+	    line-height: 1;
+	    background-color: #AA1801;
+	    color: white;
+	    position: relative;
+	    top: -10px;
+	    text-transform: uppercase;
+	    font: 500 15px "Oswald", "Helvetica", Arial, sans-serif;
+	}
+	
+}
+
+.cabecera-gris{
+	border-top: 4px solid #768696;
+	text-align: center;
+    position: relative;
+    font-size: 24px;
+	span{
+		display: inline-block;
+	    padding: 6px 10px;
+	    line-height: 1;
+	    background-color: #768696;
+	    color: white;
+	    position: relative;
+	    top: -10px;
+	    text-transform: uppercase;
+	    font: 500 15px "Oswald", "Helvetica", Arial, sans-serif;
+	}
+
+
+}
+*/
+@font-face {
+  font-family: 'bromello';
+  src: url(../fonts/bromello/bromello.ttf); }
+@font-face {
+  font-family: 'farray';
+  src: url(../fonts/FARRAY.otf); }
+@font-face {
+  font-family: 'mohave';
+  src: url(../fonts/Mohave.otf); }
+@font-face {
+  font-family: 'mohave-bold';
+  src: url(../fonts/Mohave-Bold.otf); }
+@font-face {
+  font-family: 'Nexa-light';
+  src: url(../fonts/NexaLight.otf); }
+@font-face {
+  font-family: 'Nexa-bold';
+  src: url(../fonts/NexaBold.otf); }
+.hidden {
+  opacity: 0; }
+
+.visible {
+  opacity: 1; }
+
+.titulo-seccion {
+  font-family: 'mohave-bold';
+  color: #fff;
+  white-space: pre;
+  text-align: center;
+  font-size: 50px;
+  display: inline-block;
+  text-align: center;
+  margin-top: 20px; }
+
+.portada {
+  height: 100%;
+  width: 100%;
+  background-image: url(../img/portadaBG.png);
+  background-size: cover; }
+  .portada img.nombre-titulo {
+    margin-left: 30%;
+    width: 40%;
+    margin-bottom: -30px; }
+  .portada .dev {
+    text-align: center; }
+    .portada .dev h1 {
+      font-family: 'mohave-bold';
+      color: #fff;
+      white-space: pre;
+      text-align: center;
+      font-size: 45px;
+      display: inline-block; }
+  .portada button {
+    display: inline-block;
+    margin-top: 40px;
+    border: none;
+    border-radius: 15px;
+    padding: 2px 20px;
+    background-color: rgba(35, 33, 33, 0.55); }
+    .portada button .btn-ver {
+      color: #FF5539;
+      padding-top: 6px;
+      font-size: 20px;
+      font-family: 'nexa-bold'; }
+  .portada .redes {
+    margin-left: 5%; }
+    .portada .redes a {
+      color: #08A8E2;
+      text-decoration: none;
+      font-size: 57px;
+      padding: 15px; }
+
+#portfolio {
+  height: 100%;
+  width: 100%;
+  background-image: url(../img/fondoport.jpg);
+  background-size: cover; }
+  #portfolio .contenedor-port {
+    margin: 35px 80px 5px; }
+    #portfolio .contenedor-port .variable-width a {
+      color: transparent; }
+    #portfolio .contenedor-port .variable-width .celular, #portfolio .contenedor-port .variable-width .celular-sin {
+      position: relative;
+      width: 340px;
+      text-align: center; }
+      #portfolio .contenedor-port .variable-width .celular img, #portfolio .contenedor-port .variable-width .celular-sin img {
+        width: 60%; }
+      #portfolio .contenedor-port .variable-width .celular .captura, #portfolio .contenedor-port .variable-width .celular .qr, #portfolio .contenedor-port .variable-width .celular-sin .captura, #portfolio .contenedor-port .variable-width .celular-sin .qr {
+        position: absolute;
+        top: 0;
+        left: 0; }
+    #portfolio .contenedor-port .variable-width .slick-prev, #portfolio .contenedor-port .variable-width .slick-next, #portfolio .contenedor-port .variable-width .slick-arrow {
+      display: none !important; }
+    #portfolio .contenedor-port .variable-width .slick-dots li {
+      display: inline-block; }
+      #portfolio .contenedor-port .variable-width .slick-dots li button {
+        border-radius: 20px;
+        border: none;
+        background-color: #FF5539;
+        margin: 10px 8px 0px;
+        content: ' '; }
+    #portfolio .contenedor-port .slide4 .celular-sin {
+      width: 893px;
+      margin-right: -170px; }
+    #portfolio .contenedor-port .slick-slide {
+      margin-left: 65px; }
+
+#skills {
+  background: linear-gradient(to right, #F27156 0%, #F27156 40%, #000000 40%, #E5EAED 40%, #E5EAED 100%); }
+  #skills h2 {
+    font-family: 'mohave-bold';
+    font-size: 56px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center; }
+  #skills .intro-skills {
+    margin: 40px 45px 20px;
+    font-family: 'nexa-light';
+    font-size: 20px; }
+    #skills .intro-skills span {
+      font-family: 'nexa-bold'; }
+  #skills .habil1 {
+    height: 100%; }
+    #skills .habil1 .imagen {
+      position: relative;
+      margin: 0; }
+      #skills .habil1 .imagen img {
+        position: absolute;
+        left: 25%;
+        top: 79px;
+        width: 40%; }
+  #skills .habil2 {
+    height: 100%; }
+    #skills .habil2 .mitad-hab {
+      width: 30%;
+      display: inline-block;
+      margin-top: -5%; }
+      #skills .habil2 .mitad-hab p {
+        margin-bottom: 40px;
+        color: #28B5FC; }
+    #skills .habil2 .mitad-hab2 {
+      margin-top: 10%;
+      width: 60%;
+      display: inline-block; }
+      #skills .habil2 .mitad-hab2 .progress {
+        margin-bottom: 40px; }
+        #skills .habil2 .mitad-hab2 .progress .progress-bar {
+          background-color: #28B5FC; }
+
+#about {
+  background: linear-gradient(to right, #E5EAED 0%, #E5EAED 40%, #000000 40%, #F27156 40%, #F27156 100%); }
+  #about h2 {
+    text-align: center;
+    color: #F74007;
+    font-family: 'mohave-bold';
+    font-size: 56px;
+    margin-top: 50px;
+    margin-bottom: 50px; }
+  #about .imagen {
+    text-align: center;
+    max-width: 60%;
+    margin-left: 20%; }
+    #about .imagen img {
+      width: 100%; }
+  #about .text-me {
+    vertical-align: middle;
+    text-align: justify;
+    max-width: 60%;
+    margin-left: 15%;
+    margin-top: 20%; }
+    #about .text-me .aboutme {
+      font-family: 'nexa-light';
+      font-size: 20px; }
+      #about .text-me .aboutme .nbold {
+        font-family: 'nexa-bold'; }
+
+#contact {
+  background-image: url(../img/fondo-contacto00-01.jpg);
+  background-size: cover; }
+
+/*# sourceMappingURL=main.css.map */

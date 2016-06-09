@@ -1,0 +1,98 @@
+doctype html
+html(lang='es-PE')
+	head
+		meta(charset='UTF-8')
+		title Daniela Segura
+		link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css")
+		link(href='http://fonts.googleapis.com/css?family=PT+Sans:400,700', rel='stylesheet', type='text/css')
+		link(href='http://fonts.googleapis.com/css?family=Oswald:400,700', rel='stylesheet', type='text/css')
+		link(rel='stylesheet', type='text/css', href='assets/css/dist/font-awesome.min.css')
+		//link(rel='stylesheet', type='text/css', href='assets/css/dist/bootstrap.min.css')
+		link(rel='stylesheet', type='text/css', href='assets/css/dist/slick.css')
+		link(rel='stylesheet', type='text/css', href='assets/css/dist/slick-theme.css')
+		link(rel='stylesheet', type='text/css', href='assets/css/main.css')
+
+	body
+		include helpers/variables
+		include helpers/mixins
+		section#portada
+			.container-fluid
+				.row
+					.col-xs-12
+						h1.nombre Daniela Segura
+						h1.dev Desarrolladora Front-end y comunicadora
+						a(href="#")
+				.row
+
+		section#columnistas
+
+		#contacto
+			.container
+				.row
+					.col-xs-12
+						h1.text-center Contáctese con nosotros
+						p Llena este formulario si necesita enviarnos alguna información acercadel contenido del sitio web, su funcionalidad, o si tiene alguna propuesta de información o mejora para el sitio. Así mismo, puede hacer llegar a los redactores su opinión acerca de los contenidos de una determinada sección el cual podrá elegir como destinatario.
+
+					.col-xs-12
+
+						form
+							input(type="text", class="formulario", placeholder="Nombres Completos")
+							input(type="text", class="formulario", placeholder="Correo electrónico")
+							input(type="text", class="formulario", placeholder="Correo electrónico")
+							label (Opcional)
+					.col-xs-12
+
+						h3 Elija un destinatario
+
+						form
+							.form-item.form-type-radios.form-item-cid
+								input.form-radio(type="radio")
+								label.contacto-label1 Sugerencia para el sitio web
+								label.contacto-label2 (Ej: funcionamiento y mejoras para el sitio)
+
+							.form-item.form-type-radios.form-item-cid
+								input.form-radio(type="radio")
+								label.contacto-label1 Dirección periodística
+								label.contacto-label2 (Ej: Sugerencia para la nota de prensa)
+
+							.form-item.form-type-radios.form-item-cid
+								input.form-radio(type="radio")
+								label.contacto-label1 Dirección comercial
+								label.contacto-label2 (Ej: Publicidad en diarios o sitios web)
+
+							.form-item.form-type-radios.form-item-cid
+								input.form-radio(type="radio")
+								label.contacto-label1 Cartas al director
+								label.contacto-label2 (Ej: denuncias, comentarios e impresiones)
+
+							.form-item.form-type-radios.form-item-cid
+								input.form-radio(type="radio")
+								label.contacto-label1 Promociones y productos del diario
+								label.contacto-label2 (Ej: Promociones, tablet, etc)
+
+							.form-item.form-type-radios.form-item-cid
+								input.form-radio(type="radio")
+								label.contacto-label1 Archivo periodístico
+								label.contacto-label2 (Ej: Ediciones impresas/fotos)
+						
+							textarea(type="text", class="formulario", placeholder="Mensaje")
+							button.btn-contacto(type="submit") ENVIAR
+
+
+
+
+					
+					
+				
+					
+						
+
+
+		script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js", integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS", crossorigin="anonymous")
+		script(src='http://code.jquery.com/jquery-1.11.2.min.js')
+		script(src='http://code.jquery.com/jquery-migrate-1.2.1.min.js')
+		script(type='text/javascript', src='js/bootstrap.min.js')
+		script(type='text/javascript', src='js/slick.min.js')
+		script(type='text/javascript', src='js/bootstrap-hover-dropdown.min.js')
+		script(type='text/javascript', src='js/modernizr.custom.68172.js')
+		script(type='text/javascript', src='js/respond.js')
