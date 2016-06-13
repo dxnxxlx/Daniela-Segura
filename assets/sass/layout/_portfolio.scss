@@ -1,0 +1,75 @@
+#portfolio{
+	height: 100%;
+	width: 100%;
+	background-image: url(../img/fondoport.jpg);
+	background-size: cover;
+
+	.contenedor-port{
+		margin: 35px 80px 5px;
+		.variable-width{
+			a{
+				color: transparent;
+			}
+			.celular, .celular-sin{
+				position: relative;
+				width: 340px;
+				text-align: center;
+				img{
+					width: 60%;
+				}
+				.captura, .qr{
+					position: absolute;
+					top: 0;
+					left: 0;
+				}
+
+			}
+			
+		.slick-prev, .slick-next, .slick-arrow{
+			display: none!important;
+		}
+		.slick-dots li{
+			display: inline-block;
+			button{
+				border-radius: 20px;
+			    border: none;
+			    background-color: #FF5539;
+			    margin: 10px 8px 0px;
+			    content: ' ';
+
+			}
+		}
+		
+		}
+		.slide1{
+
+		}
+		.slide2{
+		}
+		.slide4{
+			.celular-sin{
+				width: 893px;
+				margin-right:-170px;
+			}
+
+		}
+		
+		.slick-slide{
+			
+		}
+	}
+
+	#fp-nav ul li a span{
+    width: 17px;
+    height: 3px;
+    border: 0;
+    background: #fff;
+	}
+	#fp-nav ul li a.active span, #fp-nav ul li:hover a.active span{
+    background: #ddd;
+	}
+	#fp-nav ul li:hover a span{
+    background: #fff;
+	}
+
+}

@@ -1,50 +1,19 @@
-/*   h1{
-   	font-size: 5.5rem;
-    font-family: "Open Sans", "Helvetica", Arial, sans-serif;
-    line-height: 1;
-	}
+.hidden {
+  opacity: 0; }
 
-//Cabecera por secciones
+.visible {
+  opacity: 1; }
 
-.cabecera-roja{
-	border-top: 4px solid #AA1801;
-	text-align: center;
-    position: relative;
-    font-size: 24px;
-	span{
-		display: inline-block;
-	    padding: 6px 10px;
-	    line-height: 1;
-	    background-color: #AA1801;
-	    color: white;
-	    position: relative;
-	    top: -10px;
-	    text-transform: uppercase;
-	    font: 500 15px "Oswald", "Helvetica", Arial, sans-serif;
-	}
-	
-}
+.titulo-seccion {
+  font-family: 'mohave-bold';
+  color: #fff;
+  white-space: pre;
+  text-align: center;
+  font-size: 50px;
+  display: inline-block;
+  text-align: center;
+  margin-top: 20px; }
 
-.cabecera-gris{
-	border-top: 4px solid #768696;
-	text-align: center;
-    position: relative;
-    font-size: 24px;
-	span{
-		display: inline-block;
-	    padding: 6px 10px;
-	    line-height: 1;
-	    background-color: #768696;
-	    color: white;
-	    position: relative;
-	    top: -10px;
-	    text-transform: uppercase;
-	    font: 500 15px "Oswald", "Helvetica", Arial, sans-serif;
-	}
-
-
-}
-*/
 @font-face {
   font-family: 'bromello';
   src: url(../fonts/bromello/bromello.ttf); }
@@ -63,21 +32,42 @@
 @font-face {
   font-family: 'Nexa-bold';
   src: url(../fonts/NexaBold.otf); }
-.hidden {
-  opacity: 0; }
+#fp-nav ul li a span {
+  position: absolute;
+  z-index: 1;
+  width: 17px;
+  height: 3px;
+  border: 0;
+  background: #FF5539;
+  left: 50%;
+  top: 50%;
+  margin: -2px 0 0 -2px; }
 
-.visible {
-  opacity: 1; }
+#fp-nav ul li a span {
+  border-radius: 0%; }
 
-.titulo-seccion {
-  font-family: 'mohave-bold';
-  color: #fff;
-  white-space: pre;
-  text-align: center;
-  font-size: 50px;
-  display: inline-block;
-  text-align: center;
-  margin-top: 20px; }
+#fp-nav ul li a.active span, #fp-nav ul li:hover a.active span {
+  background: #fff;
+  border-radius: 0%;
+  width: 23px;
+  height: 3px; }
+
+#fp-nav ul li:hover a span {
+  width: 23px;
+  height: 3px;
+  background: #FF5539; }
+
+#fp-nav ul li .fp-tooltip, #fp-nav ul li:hover .fp-tooltip {
+  font-family: 'Nexa-bold';
+  color: #FF5539;
+  top: -7px; }
+
+#fp-nav.fp-show-active a.active + .fp-tooltip {
+  color: #fff; }
+
+#contact {
+  background-image: url(../img/fondo-contacto00-01.jpg);
+  background-size: cover; }
 
 .portada {
   height: 100%;
@@ -149,8 +139,15 @@
     #portfolio .contenedor-port .slide4 .celular-sin {
       width: 893px;
       margin-right: -170px; }
-    #portfolio .contenedor-port .slick-slide {
-      margin-left: 65px; }
+  #portfolio #fp-nav ul li a span {
+    width: 17px;
+    height: 3px;
+    border: 0;
+    background: #fff; }
+  #portfolio #fp-nav ul li a.active span, #portfolio #fp-nav ul li:hover a.active span {
+    background: #ddd; }
+  #portfolio #fp-nav ul li:hover a span {
+    background: #fff; }
 
 #skills {
   background: linear-gradient(to right, #F27156 0%, #F27156 40%, #000000 40%, #E5EAED 40%, #E5EAED 100%); }
@@ -180,13 +177,11 @@
     height: 100%; }
     #skills .habil2 .mitad-hab {
       width: 30%;
-      display: inline-block;
-      margin-top: -5%; }
+      display: inline-block; }
       #skills .habil2 .mitad-hab p {
         margin-bottom: 40px;
         color: #28B5FC; }
     #skills .habil2 .mitad-hab2 {
-      margin-top: 10%;
       width: 60%;
       display: inline-block; }
       #skills .habil2 .mitad-hab2 .progress {
@@ -221,8 +216,13 @@
       #about .text-me .aboutme .nbold {
         font-family: 'nexa-bold'; }
 
-#contact {
-  background-image: url(../img/fondo-contacto00-01.jpg);
-  background-size: cover; }
+/*.portada {
+	img.nombre-titulo {
+    margin-left: 10%;
+    width: 80%;
+    margin-bottom: -30px;
+	}
+}
+*/
 
 /*# sourceMappingURL=main.css.map */

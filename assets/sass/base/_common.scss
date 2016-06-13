@@ -28,3 +28,48 @@
     src: url(../fonts/NexaBold.otf);
 }
 
+//Vertical nav
+#fp-nav ul li a span{
+
+    position: absolute;
+    z-index: 1;
+    width: 17px;
+    height: 3px;
+    border: 0;
+    background: #FF5539;
+    left: 50%;
+    top: 50%;
+    margin: -2px 0 0 -2px;
+}
+
+#fp-nav ul li a span{
+ border-radius: 0%;
+
+} 
+
+#fp-nav ul li a.active span, #fp-nav ul li:hover a.active span{
+    background: #fff;
+    border-radius: 0%;
+    width: 23px;
+    height: 3px;
+
+} 
+
+#fp-nav ul li:hover a span{
+    width: 23px;
+    height: 3px;
+    background: #FF5539;
+}
+
+#fp-nav ul li .fp-tooltip, #fp-nav ul li:hover .fp-tooltip{
+    font-family: 'Nexa-bold';
+    color: #FF5539;
+    top: -7px;
+}
+
+#fp-nav.fp-show-active a.active+.fp-tooltip{
+    color: #fff,
+}
+
+
+//.fp-slidesNav ul li a span
