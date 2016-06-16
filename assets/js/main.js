@@ -6,8 +6,20 @@ $(document).ready(function() {
 		navigationTooltips: ['Home', 'Portafolio', 'Sobre mí', 'Habilidades', 'Contacto'],
 		//showActiveTooltip: true,
 		//responsiveWidth: 1100
-		keyboardScrolling: true
-
+		keyboardScrolling: true,
+		afterLoad: function() {
+			var seccion = window.location.hash;
+			if (seccion == '#sobre') {
+				$("#fp-nav ul li a span").css({ background: "black"});
+				$("#fp-nav ul li a.active span").css({ background: "#FFF"});
+			} else if (seccion == '#habilidades'){
+				$("#fp-nav ul li a span").css({ background: "#FF5539"});
+				$("#fp-nav ul li a.active span").css({ background: "black"});
+			}else {
+				$("#fp-nav ul li a span").css({ background: "#FF5539"});
+				$("#fp-nav ul li a.active span").css({ background: "#FFF"});
+			}
+		}
 
     });
 	$('.variable-width').slick({
@@ -24,6 +36,5 @@ $(document).ready(function() {
         }, function(){
         $(this).find(":last-child").removeClass("hidden");
     });
-
 });
 

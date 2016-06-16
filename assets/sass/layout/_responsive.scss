@@ -1,8 +1,12 @@
-/*.portada {
-	img.nombre-titulo {
-    margin-left: 10%;
-    width: 80%;
-    margin-bottom: -30px;
-	}
+/*
 }
 */
+@media (max-width: 768px) {
+	.portada {
+		img.nombre-titulo {
+		margin-left: 10%;
+		width: 80%;
+		margin-bottom: -30px;
+		}
+	}
+}

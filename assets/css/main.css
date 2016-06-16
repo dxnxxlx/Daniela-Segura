@@ -32,6 +32,9 @@
 @font-face {
   font-family: 'Nexa-bold';
   src: url(../fonts/NexaBold.otf); }
+#fp-nav {
+  top: 85%; }
+
 #fp-nav ul li a span {
   position: absolute;
   z-index: 1;
@@ -216,13 +219,13 @@
       #about .text-me .aboutme .nbold {
         font-family: 'nexa-bold'; }
 
-/*.portada {
-	img.nombre-titulo {
-    margin-left: 10%;
-    width: 80%;
-    margin-bottom: -30px;
-	}
+/*
 }
 */
+@media (max-width: 768px) {
+  .portada img.nombre-titulo {
+    margin-left: 10%;
+    width: 80%;
+    margin-bottom: -30px; } }
 
 /*# sourceMappingURL=main.css.map */
