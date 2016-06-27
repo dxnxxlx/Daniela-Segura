@@ -1,4 +1,54 @@
 #contact{
-	background-image: url(../img/fondo-contacto00-01.jpg);
+	background-image: url(../img/contactoBG.PNG);
 	background-size: cover;
+	.titulo-seccion{
+		font-size: 56px;
+		margin-bottom: 30px;
+	}
+	.texto-redes{
+		padding: 15px;
+
+		span{
+			font-weight: bold;
+		}
+		.correo{
+			font-size: 19px;
+			margin: 15px;
+			color: white;
+
+			a{
+				text-decoration: none;
+				color: white;
+				font-weight: bold;
+			}
+		}
+		p{
+			font-family: 'nexa-light';
+			font-size: 20px;
+			color: white;
+		}
+	}
+	.redes-sociales{
+		margin: 15px;
+		.hvr-pulse-grow{
+			margin: 15px;
+		}
+		.icon{
+			text-align: center;
+			display: inline-block;
+			width: 2.3em;
+			height: 2.3em;
+			border-radius: 50%;
+			line-height: 2em;
+			color: white;
+			font-size: 20px;
+			border: 1px solid transparent;
+			transition: all 0.3s ease-in-out;
+			&:hover{
+				color: #f27156;
+    			background: rgba(0, 0, 0, 0.8);
+			}
+		}
+
+	}
 }

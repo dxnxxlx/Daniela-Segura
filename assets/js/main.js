@@ -1,9 +1,9 @@
 $(document).ready(function() {
     $('#fullpage').fullpage({
-        anchors:['portada', 'portafolio', 'sobre', 'habilidades'],
+        anchors:['portada', 'portafolio', 'sobre', 'habilidades', 'contacto'],
 		navigation: true,
 		navigationPosition: 'right',
-		navigationTooltips: ['Home', 'Portafolio', 'Sobre mí', 'Habilidades', 'Contacto'],
+		navigationTooltips: ['Home', 'Portafolio', 'Sobre mí', 'Habilidades', 'Contáctame'],
 		//showActiveTooltip: true,
 		//responsiveWidth: 1100
 		keyboardScrolling: true,
