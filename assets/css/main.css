@@ -69,8 +69,45 @@
   color: #fff; }
 
 #contact {
-  background-image: url(../img/fondo-contacto00-01.jpg);
+  background-image: url(../img/contactoBG.PNG);
   background-size: cover; }
+  #contact .titulo-seccion {
+    font-size: 56px;
+    margin-bottom: 30px; }
+  #contact .texto-redes {
+    padding: 15px; }
+    #contact .texto-redes span {
+      font-weight: bold; }
+    #contact .texto-redes .correo {
+      font-size: 19px;
+      margin: 15px;
+      color: white; }
+      #contact .texto-redes .correo a {
+        text-decoration: none;
+        color: white;
+        font-weight: bold; }
+    #contact .texto-redes p {
+      font-family: 'nexa-light';
+      font-size: 20px;
+      color: white; }
+  #contact .redes-sociales {
+    margin: 15px; }
+    #contact .redes-sociales .hvr-pulse-grow {
+      margin: 15px; }
+    #contact .redes-sociales .icon {
+      text-align: center;
+      display: inline-block;
+      width: 2.3em;
+      height: 2.3em;
+      border-radius: 50%;
+      line-height: 2em;
+      color: white;
+      font-size: 20px;
+      border: 1px solid transparent;
+      transition: all 0.3s ease-in-out; }
+      #contact .redes-sociales .icon:hover {
+        color: #f27156;
+        background: rgba(0, 0, 0, 0.8); }
 
 .portada {
   height: 100%;
